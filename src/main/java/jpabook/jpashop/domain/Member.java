@@ -14,6 +14,8 @@ public class Member {
     @Id @GeneratedValue
     @Column(name = "member_id")
     private Long id;
+    //엔티티를 생성하고 JPA를 통해 DB에 저장하는 시점이 되어야 값이 설정되므로 null을 유지할 수 있는 상태가 필요
+    //그래서 Long을 쓴다.
 
     private String name;
 
